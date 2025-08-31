@@ -2,7 +2,6 @@ import { groq } from '@ai-sdk/groq';
 import { streamText, convertToModelMessages, UIMessage, stepCountIs } from 'ai';
 import { tools } from '@/ai/tools';
 
-
 /*
 
 export async function POST(request: Request) {
@@ -32,7 +31,7 @@ export async function POST(request: Request) {
 
   const result = streamText({
     model: groq('llama3-70b-8192'),
-    system: `You are a helpful assistant that can ask interactive questions.
+    system: `You are a helpful assistant that can ask interactive questions. always use the interactive question tool when you want to know something from the user.
              ${isInteractiveResponse ? 'The last message was an interactive response.' : ''}`,
     messages: convertToModelMessages(messages),
     tools,

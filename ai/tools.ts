@@ -129,8 +129,8 @@ export const interactiveQuestionTool = createTool({
 
 // Update your tools export
 export const tools = {
-  displayWeather: weatherTool,
-  getStockPrice: stockTool,
-  generateClarifyingQuestions: clarifyingQuestionsTool,
   askInteractiveQuestion: interactiveQuestionTool,
 };
+  // generateClarifyingQuestions: clarifyingQuestionsTool,
+  // displayWeather: weatherTool,
+  // getStockPrice: stockTool,
